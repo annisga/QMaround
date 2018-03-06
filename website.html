@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link href="css-website/css/bootstrap.css" rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="css-website/webstyle.css">
   <link href="https://fonts.googleapis.com/css?family=Knewave|Londrina+Outline|Londrina+Shadow|Spicy+Rice" rel="stylesheet">
-
+  <script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
 
   <h1> QMaround </h1>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Action</a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+    </div>
+  </div>
 
    <div id="map"></div>
    <script>
      function initMap() {
        var uluru = {lat: 51.5240671, lng: -0.0403745};
        var map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 14.2,
+         zoom: 14.4,
          center: uluru
        });
        var marker = new google.maps.Marker({
@@ -29,13 +41,14 @@
             fillOpacity: 0.1,
             map: map,
             center: {lat: 51.5240671, lng: -0.0403745},
-            radius: 1509.34
+            radius: 1209.34
       });
      }
    </script>
    <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx5DMxC70YghX9LndVohabnY3T7vKTbvk&callback=initMap">
    </script>
+
 
 </body>
 </html>

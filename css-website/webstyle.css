@@ -10,6 +10,36 @@ h1 {
 
 }
 
+h2 {
+  color: #49597c ;
+  text-align: center;
+  font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Outline', cursive;
+  font-family: 'Spicy Rice', cursive;
+  font-family: 'Knewave', cursive;
+  font-size: 80px ;
+  margin-top: 0px ;
+
+}
+
+h3 {
+  color: #49597c ;
+  text-align: center;
+  font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Outline', cursive;
+  font-family: 'Spicy Rice', cursive;
+  font-family: 'Knewave', cursive;
+  font-size: 40px ;
+  margin-top: 50px;
+
+}
+
+button {
+  background-color: #49597c ;
+  text-align: center;
+}
+
+
 #map {
  align: center;
  height: 600px;

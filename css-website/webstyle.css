@@ -1,4 +1,21 @@
 h1 {
-  color: pink;
+  color: #49597c ;
   text-align: center;
+  font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Outline', cursive;
+  font-family: 'Spicy Rice', cursive;
+  font-family: 'Knewave', cursive;
+  font-size: 80px ;
+  padding-top: 0px ;
+
+}
+
+#map {
+ align: center;
+ height: 650px;
+ width: 100%;
+}
+
+body {
+  background-color: #dce9f2 ;
 }

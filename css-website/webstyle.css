@@ -36,20 +36,26 @@ h3 {
 
 .dropdown {
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 button {
   background-color: #49597c ;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 20px;
   -webkit-transation-duration: 0.4s;
   transition-duration: 0.4s;
+
 }
 
 button:hover {
   background-color: white;
   color: #49597c;
+}
+
+button-auto{
+  background-color: #49597c ;
+  text-align: center;
 }
 
 

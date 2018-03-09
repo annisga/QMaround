@@ -11,7 +11,7 @@
 
   <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown button
+      Food
     </button>
     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
       <a class="dropdown-item" href="#">Action</a>
@@ -23,13 +23,13 @@
    <div id="map"></div>
    <script>
      function initMap() {
-       var uluru = {lat: 51.5240671, lng: -0.0403745};
+       var qmary = {lat: 51.5240671, lng: -0.0403745};
        var map = new google.maps.Map(document.getElementById('map'), {
          zoom: 14.4,
-         center: uluru
+         center: qmary
        });
        var marker = new google.maps.Marker({
-         position: uluru,
+         position: qmary,
          map: map
        });
        var circle = new google.maps.Circle({
@@ -42,11 +42,40 @@
             center: {lat: 51.5240671, lng: -0.0403745},
             radius: 1209.34
       });
+      var infowindow = new google.maps.InfoWindow();
+      var service = new google.maps.places.PlacesService(map);
+      service.nearbySearch({
+         location: qmary,
+         radius: 1209.34,
+         type: ['restaurant']
+       }, callback);
+     }
+
+     function callback(results, status) {
+       if (status === google.maps.places.PlacesServiceStatus.OK) {
+         for (var i = 0; i < results.length; i++) {
+           createMarker(results[i]);
+         }
+       }
+     }
+
+     function createMarker(place) {
+       var placeLoc = place.geometry.location;
+       var marker = new google.maps.Marker({
+         map: map,
+         position: place.geometry.location
+       });
+
+       google.maps.event.addListener(marker, 'click', function() {
+         infowindow.setContent(place.name);
+         infowindow.open(map, this);
+       });
      }
    </script>
    <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx5DMxC70YghX9LndVohabnY3T7vKTbvk&callback=initMap">
    </script>
+
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

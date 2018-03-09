@@ -58,6 +58,23 @@ button-auto{
   text-align: center;
 }
 
+p{
+  font-size: 20px;
+  margin-left: 20px;
+  color: #49597c;
+  font-family: 'Londrina Shadow', cursive;
+  font-family: 'Londrina Outline', cursive;
+  font-family: 'Spicy Rice', cursive;
+  font-family: 'Knewave', cursive;
+}
+
+p1 {
+  font-size: 20px;
+  text-align: center;
+  color: #49597c;
+  font-family: 'Gochi Hand', cursive;
+}
+
 
 #map {
  align: center;

@@ -83,20 +83,28 @@
          map: map
        });
 
-       /* rusty bike */
-       var marker = new google.maps.Marker({
+       var contentString1 = '<h4>Rusty Bike</h4>';
+
+       var infowindow1 = new google.maps.InfoWindow({
+         content: contentString1
+       });
+       /*beauty magic*/
+       var marker1 = new google.maps.Marker({
          position: {lat:51.525305, lng:-0.0326352},
          map: map,
-         name: "Rusty Bike",
-         category: "Food",
+         title: "Rusty Bike"
        });
+       marker1.addListener("click", function() {
+         infowindow1.open(map, marker1);
+       });
+
 
        /*cafe east*/
        var marker = new google.maps.Marker({
          position: {lat:51.531911, lng:-0.0347625},
          map: map,
          name: "Cafe East",
-         category: "Food",
+         category: "Food"
        });
 
        /*the crown*/
@@ -104,7 +112,7 @@
          position: {lat:51.532933, lng:-0.0416248},
          map: map,
          name:"The Crown",
-         category: "Food", "Drinks",
+         category: "Food"
        });
 
        /*drapers*/
@@ -112,15 +120,15 @@
          position: {lat:51.523187, lng:-0.0428244},
          map: map,
          name: "Drapers",
-         category: "Food", "Drinks",
+         category: "Food"
        });
 
        /*90 degree melt*/
        var marker = new google.maps.Marker({
          position: {lat:51.522307, lng:-0.0447611},
          map: map,
-         name: "90 Degree Melt"
-         category: "Food",
+         name: "90 Degree Melt",
+         category: "Food"
        });
 
        /*the pizza room*/
@@ -134,9 +142,9 @@
        /*greedy cow*/
        var marker = new google.maps.Marker({
          position: {lat:51.525406, lng:-0.0345987},
-         map: map
+         map: map,
          name: "Greedy Cow",
-         category: "Food",
+         category: "Food"
        });
 
        /*spoons*/
@@ -144,7 +152,7 @@
          position: {lat:51.522189, lng:-0.0453920},
          map: map,
          name: "Wetherspoon",
-         category: "Food", "Drinks",
+         category: "Food"
        });
 
        /*sweet*/
@@ -152,7 +160,7 @@
          position: {lat:51.521845, lng:-0.0471006},
          map: map,
          name: "Sweet",
-         category: "Food",
+         category: "Food"
        });
 
        /*coborn*/
@@ -160,7 +168,7 @@
          position: {lat:51.527020, lng:-0.0300272},
          map: map,
          name: "Coborn",
-         category: "Food", "Drinks",
+         category: "Food"
        });
 
        /*fortune cat*/
@@ -168,7 +176,7 @@
          position: {lat:51.521173, lng:-0.0328910},
          map: map,
          name: "Fortune Cat",
-         category: "Food",
+         category: "Food"
        });
 
        /*SAGER & WILDE*/
@@ -176,7 +184,7 @@
          position: {lat:51.528293, lng:-0.0561215},
          map: map,
          name: "Sager & Wilde",
-         category: "Food",
+         category: "Food"
        });
 
        /*pavillion victoria park*/
@@ -184,7 +192,7 @@
          position: {lat:51.533433, lng:-0.0428518},
          map: map,
          name: "Pavillion",
-         category:"Food",
+         category:"Food"
        });
 
        /*genesis*/
@@ -192,7 +200,7 @@
          position: {lat:51.521134, lng:-0.0510900},
          map: map,
          name: "Genesis",
-         category: "To Do",
+         category: "To Do"
        });
 
        /*vintage shop*/
@@ -200,7 +208,7 @@
          position: {lat:51.520167, lng:-0.0282099},
          map: map,
          name: "East End Vintage Clothing",
-         category: "To Do",
+         category: "To Do"
        });
 
        /*Museum of childhood*/
@@ -208,7 +216,7 @@
          position: {lat:51.529056, lng:-0.0549416},
          map: map,
          name: "V&A Museum of Childhood",
-         category: "To Do",
+         category: "To Do"
        });
 
        /*city farm*/
@@ -216,7 +224,7 @@
          position: {lat:51.516916, lng:-0.0433820},
          map: map,
          name: "Stepney City Farm",
-         category: "To Do",
+         category: "To Do"
        });
 
        /*east end thrift shop*/
@@ -224,7 +232,7 @@
          position: {lat:51.519801, lng:-0.0512837},
          map: map,
          name: "East End Thrift Shop",
-         category: "To Do",
+         category: "To Do"
        });
 
        /*kart racing*/
@@ -240,7 +248,7 @@
          position: {lat:51.525405, lng:-0.0552905},
          map: map,
          name: "Backyard Comedy Club",
-         category: "To Do",
+         category: "To Do"
        });
 
        /*outdoor gym*/
@@ -248,7 +256,7 @@
          position: {lat:51.531311, lng:-0.0420395},
          map: map,
          name: "adiZone Outdoot Gym",
-         category: "Sport",
+         category: "Sport"
        });
 
        /*mile end leisure centre*/
@@ -256,7 +264,7 @@
          position: {lat:51.519149, lng:-0.0316593},
          map: map,
          name: "Mile End Leisure Centre and Stadium",
-         category: "Sport",
+         category: "Sport"
        });
 
        /*buddhist centre*/
@@ -264,7 +272,7 @@
          position: {lat:51.528030, lng:-0.0512183},
          map: map,
          name: "London Buddhist Centre",
-         category: "Sport",
+         category: "Sport"
        });
 
        /*climbing wall*/
@@ -272,13 +280,15 @@
          position: {lat:51.528062, lng:-0.0398416},
          map: map,
          name: "Mile End Climbing Wall",
-         category: "Sport",
+         category: "Sport"
        });
 
        /*london cocktail club*/
        var marker = new google.maps.Marker({
          position: {lat:51.528536, lng:-0.0561931},
-         map: map
+         map: map,
+         name: "London Cockatil Club",
+         category: "Drinks"
        });
 
        /*the old ship*/
@@ -286,7 +296,7 @@
          position: {lat:51.51360, lng:-0.0398276},
          map: map,
          name: "The Old Ship",
-         category: "Drinks",
+         category: "Drinks"
        });
 
        /*east london liquor company*/
@@ -294,7 +304,7 @@
          position: {lat:51.532011, lng:-0.0414562},
          map: map,
          name: "East London Liquor Company",
-         category: "Drinks",
+         category: "Drinks"
        });
 
        /*cofee room*/
@@ -302,7 +312,7 @@
          position: {lat:51.525625, lng:-0.0347586},
          map: map,
          name: "The Coffee Room",
-         category: "Drinks",
+         category: "Drinks"
        });
 
      /*mother kellys*/
@@ -310,7 +320,7 @@
        position: {lat:51.528417, lng:-0.0561818},
        map: map,
        name: "Mother Kelly's",
-       category: "Drinks",
+       category: "Drinks"
      });
 
       /*hoise of nails*/
@@ -318,7 +328,7 @@
         position: {lat:51.525531, lng:-0.0346807},
         map: map,
         name: "House of Nails",
-        category: "Health & Beauty",
+        category: "Health & Beauty"
       });
 
       /*hair and beuty studio*/
@@ -326,15 +336,22 @@
         position: {lat:51.521602, lng:-0.0333842},
         map: map,
         name: "Hair and Beauty Studio",
-        category: "Health & Beauty",
+        category: "Health & Beauty"
       });
 
+      var contentString = '<h4>Beauty Magic</h4>';
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
       /*beauty magic*/
       var marker = new google.maps.Marker({
         position: {lat:51.525789, lng:-0.0309165},
         map: map,
-        name: "Beauty Magic",
-        category: "Health & Beauty",
+        title: 'Beauty Magic'
+      });
+      marker.addListener("click", function() {
+        infowindow.open(map, marker);
       });
 
        var circle = new google.maps.Circle({
@@ -348,38 +365,15 @@
             radius: 1209.34
       });
 
-      /*We dont understand how this part of code works*/
 
-      var infowindow = new google.maps.InfoWindow();
-      var service = new google.maps.places.PlacesService(map);
-      service.nearbySearch({
-         location: qmary,
-         radius: 1209.34,
-         type: ['restaurants']
-       }, callback);
-     }
 
-     function callback(results, status) {
-       if (status === google.maps.places.PlacesServiceStatus.OK) {
-         for (var i = 0; i < results.length; i++) {
-           createMarker(results[i]);
-         }
-       }
-     }
 
-     function createMarker(place) {
-       var placeLoc = {lat:51.529348, lng:-0.033354};
-       var marker = new google.maps.Marker({
-         map: map,
-         position: {lat:51.529348, lng:-0.033354},
-       });
 
-       google.maps.event.addListener(marker, 'click', function() {
-         infowindow.setContent(place.name);
-         infowindow.open(map, this);
-       });
-     }
-   </script>
+
+
+    }
+    </script>
+
    <script async defer
    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx5DMxC70YghX9LndVohabnY3T7vKTbvk&callback=initMap">
    </script>

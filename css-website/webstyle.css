@@ -38,29 +38,21 @@ h4{
   color: black;
 }
 
-.dropdown {
+.btn-group {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 30px;
+  margin-left: 350px;
 }
 
-button {
-  background-color: #49597c ;
-  text-align: center;
-  -webkit-transation-duration: 0.4s;
-  transition-duration: 0.4s;
-
-}
-
-button:hover {
-  background-color: white;
-  color: #49597c;
-}
-
-button-auto{
-  background-color: #49597c ;
+.btn-group button {
   text-align: center;
 }
+
+.btn-group .button:hover {
+    background-color: #49597c;
+  }
+
 
 p{
   font-size: 20px;

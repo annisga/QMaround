@@ -46,7 +46,329 @@
 </div>
 
 
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Food
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+  <a class="dropdown-item" href="#">Something else here</a>
+</div>
+</div>
 
+<div class="button">
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Drinks
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+  <a class="dropdown-item" href="#">Something else here</a>
+</div>
+
+
+<div class="button">
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Sport
+</button>
+<div class="dropdown-menu" "dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+  <a class="dropdown-item" href="#">Something else here</a>
+</div>
+</div>
+
+<div class="button">
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Health & Beauty
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+  <a class="dropdown-item" href="#">Something else here</a>
+</div>
+</div>
+
+<div class="button">
+<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  To Do
+</button>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item" href="#">Action</a>
+  <a class="dropdown-item" href="#">Another action</a>
+  <a class="dropdown-item" href="#">Something else here</a>
+</div>
+</div>
+
+var contentString1 = '<h4>Rusty Bike</h4>';
+
+var infowindow1 = new google.maps.InfoWindow({
+  content: contentString1
+});
+/*beauty magic*/
+var marker1 = new google.maps.Marker({
+  position: {lat:51.525305, lng:-0.0326352},
+  map: map,
+  title: "Rusty Bike"
+});
+marker1.addListener("click", function() {
+  infowindow1.open(map, marker1);
+});
+
+/*cafe east*/
+var marker = new google.maps.Marker({
+  position: {lat:51.531911, lng:-0.0347625},
+  map: map,
+  name: "Cafe East",
+  category: "Food"
+});
+
+/*the crown*/
+var marker = new google.maps.Marker({
+  position: {lat:51.532933, lng:-0.0416248},
+  map: map,
+  name:"The Crown",
+  category: "Food"
+});
+
+/*drapers*/
+var marker = new google.maps.Marker({
+  position: {lat:51.523187, lng:-0.0428244},
+  map: map,
+  name: "Drapers",
+  category: "Food"
+});
+
+/*90 degree melt*/
+var marker = new google.maps.Marker({
+  position: {lat:51.522307, lng:-0.0447611},
+  map: map,
+  name: "90 Degree Melt",
+  category: "Food"
+});
+
+/*the pizza room*/
+var marker = new google.maps.Marker({
+  position: {lat:51.525468, lng:-0.0346619},
+  map: map,
+  name: "The Pizza Room",
+  category: "Food"
+});
+
+/*greedy cow*/
+var marker = new google.maps.Marker({
+  position: {lat:51.525406, lng:-0.0345987},
+  map: map,
+  name: "Greedy Cow",
+  category: "Food"
+});
+
+/*spoons*/
+var marker = new google.maps.Marker({
+  position: {lat:51.522189, lng:-0.0453920},
+  map: map,
+  name: "Wetherspoon",
+  category: "Food"
+});
+
+/*sweet*/
+var marker = new google.maps.Marker({
+  position: {lat:51.521845, lng:-0.0471006},
+  map: map,
+  name: "Sweet",
+  category: "Food"
+});
+
+/*coborn*/
+var marker = new google.maps.Marker({
+  position: {lat:51.527020, lng:-0.0300272},
+  map: map,
+  name: "Coborn",
+  category: "Food"
+});
+
+/*fortune cat*/
+var marker = new google.maps.Marker({
+  position: {lat:51.521173, lng:-0.0328910},
+  map: map,
+  name: "Fortune Cat",
+  category: "Food"
+});
+
+/*SAGER & WILDE*/
+var marker = new google.maps.Marker({
+  position: {lat:51.528293, lng:-0.0561215},
+  map: map,
+  name: "Sager & Wilde",
+  category: "Food"
+});
+
+/*pavillion victoria park*/
+var marker = new google.maps.Marker({
+  position: {lat:51.533433, lng:-0.0428518},
+  map: map,
+  name: "Pavillion",
+  category:"Food"
+});
+
+/*genesis*/
+var marker = new google.maps.Marker({
+  position: {lat:51.521134, lng:-0.0510900},
+  map: map,
+  name: "Genesis",
+  category: "To Do"
+});
+
+/*vintage shop*/
+var marker = new google.maps.Marker({
+  position: {lat:51.520167, lng:-0.0282099},
+  map: map,
+  name: "East End Vintage Clothing",
+  category: "To Do"
+});
+
+/*Museum of childhood*/
+var marker = new google.maps.Marker({
+  position: {lat:51.529056, lng:-0.0549416},
+  map: map,
+  name: "V&A Museum of Childhood",
+  category: "To Do"
+});
+
+/*city farm*/
+var marker = new google.maps.Marker({
+  position: {lat:51.516916, lng:-0.0433820},
+  map: map,
+  name: "Stepney City Farm",
+  category: "To Do"
+});
+
+/*east end thrift shop*/
+var marker = new google.maps.Marker({
+  position: {lat:51.519801, lng:-0.0512837},
+  map: map,
+  name: "East End Thrift Shop",
+  category: "To Do"
+});
+
+/*kart racing*/
+var marker = new google.maps.Marker({
+  position: {lat:51.518169, lng:-0.0306817},
+  map: map,
+  name: "Revolution Karting",
+  category: "To Do"
+});
+
+/*comedy club*/
+var marker = new google.maps.Marker({
+  position: {lat:51.525405, lng:-0.0552905},
+  map: map,
+  name: "Backyard Comedy Club",
+  category: "To Do"
+});
+
+/*outdoor gym*/
+var marker = new google.maps.Marker({
+  position: {lat:51.531311, lng:-0.0420395},
+  map: map,
+  name: "adiZone Outdoot Gym",
+  category: "Sport"
+});
+
+/*mile end leisure centre*/
+var marker = new google.maps.Marker({
+  position: {lat:51.519149, lng:-0.0316593},
+  map: map,
+  name: "Mile End Leisure Centre and Stadium",
+  category: "Sport"
+});
+
+/*buddhist centre*/
+var marker = new google.maps.Marker({
+  position: {lat:51.528030, lng:-0.0512183},
+  map: map,
+  name: "London Buddhist Centre",
+  category: "Sport"
+});
+
+/*climbing wall*/
+var marker = new google.maps.Marker({
+  position: {lat:51.528062, lng:-0.0398416},
+  map: map,
+  name: "Mile End Climbing Wall",
+  category: "Sport"
+});
+
+/*london cocktail club*/
+var marker = new google.maps.Marker({
+  position: {lat:51.528536, lng:-0.0561931},
+  map: map,
+  name: "London Cockatil Club",
+  category: "Drinks"
+});
+
+/*the old ship*/
+var marker = new google.maps.Marker({
+  position: {lat:51.51360, lng:-0.0398276},
+  map: map,
+  name: "The Old Ship",
+  category: "Drinks"
+});
+
+/*east london liquor company*/
+var marker = new google.maps.Marker({
+  position: {lat:51.532011, lng:-0.0414562},
+  map: map,
+  name: "East London Liquor Company",
+  category: "Drinks"
+});
+
+/*cofee room*/
+var marker = new google.maps.Marker({
+  position: {lat:51.525625, lng:-0.0347586},
+  map: map,
+  name: "The Coffee Room",
+  category: "Drinks"
+});
+
+/*mother kellys*/
+var marker = new google.maps.Marker({
+position: {lat:51.528417, lng:-0.0561818},
+map: map,
+name: "Mother Kelly's",
+category: "Drinks"
+});
+
+/*hoise of nails*/
+var marker = new google.maps.Marker({
+ position: {lat:51.525531, lng:-0.0346807},
+ map: map,
+ name: "House of Nails",
+ category: "Health & Beauty"
+});
+
+/*hair and beuty studio*/
+var marker = new google.maps.Marker({
+ position: {lat:51.521602, lng:-0.0333842},
+ map: map,
+ name: "Hair and Beauty Studio",
+ category: "Health & Beauty"
+});
+
+var contentString = '<h4>Beauty Magic</h4>';
+
+var infowindow = new google.maps.InfoWindow({
+ content: contentString
+});
+/*beauty magic*/
+var marker = new google.maps.Marker({
+ position: {lat:51.525789, lng:-0.0309165},
+ map: map,
+ title: 'Beauty Magic'
+});
+marker.addListener("click", function() {
+ infowindow.open(map, marker);
+});
 
 
 </body>

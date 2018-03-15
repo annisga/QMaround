@@ -35,20 +35,6 @@
          map: map
        });
 
-       function addMarker (location) {
-         marker = new google.maps.Marker({
-           position: location,
-           map: map,
-        animation: google.maps.Animation.DROP
-         });
-       }
-
-       function TestMarker() {
-         Marker1 = new google.maps.LatLng(51.525305,-0.0326352); addMarker(Marker1);
-         Marker2 = new google.maps.LatLng(51.531911,-0.0347625); addMarker(Marker2);
-       }
-
-
        var circle = new google.maps.Circle({
             strokeColor: '#49597c',
             strokeOpacity: 0.8,
@@ -60,11 +46,18 @@
             radius: 1209.34
       });
 
+      function addMarker (location) {
+        marker = new google.maps.Marker({
+          position: location,
+          map: map,
+       animation: google.maps.Animation.DROP
+        });
+      }
 
-
-
-
-
+      function TestMarker() {
+        Marker1 = new google.maps.LatLng(51.525305,-0.0326352); addMarker(Marker1);
+        Marker2 = new google.maps.LatLng(51.531911,-0.0347625); addMarker(Marker2);
+      }
 
     }
     </script>

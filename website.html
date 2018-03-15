@@ -9,10 +9,9 @@
 
   <h1> QMaround </h1>
 
-
 <div class="btn-group" role="group">
 
-    <button id="drop" onclick="drop()" type="button" class="btn btn-outline-info">Food</button>
+    <button id="drop" onclick="TestMarker()" type="button" class="btn btn-outline-info">Food</button>
     <button type="button" class="btn btn-outline-info">Drinks</button>
     <button type="button" class="btn btn-outline-info">Sport</button>
     <button type="button" class="btn btn-outline-info">Health & Beauty</button>
@@ -24,13 +23,6 @@
    <div id="map"></div>
    <script>
 
-   var neighborhoods = [
-     {lat: 52.511, lng: 13.447},
-     {lat: 52.549, lng: 13.422},
-     {lat: 52.497, lng: 13.396},
-     {lat: 52.517, lng: 13.394}
-         ];
-    var markers = [];
 
      function initMap() {
        var qmary = {lat: 51.5240671, lng: -0.0403745};
@@ -43,30 +35,18 @@
          map: map
        });
 
-       function drop() {
-        clearMarkers();
-        for (var i = 0; i < neighborhoods.length; i++) {
-          addMarkerWithTimeout(neighborhoods[i], i * 200);
-        }
-      }
+       function addMarker (location) {
+         marker = new google.maps.Marker({
+           position: location,
+           map: map,
+        animation: google.maps.Animation.DROP
+         });
+       }
 
-       function addMarkerWithTimeout(position, timeout) {
-        window.setTimeout(function() {
-          markers.push(new google.maps.Marker({
-            position: position,
-            map: map,
-            animation: google.maps.Animation.DROP
-          }));
-        }, timeout);
-      }
-
-
-      function clearMarkers() {
-        for (var i = 0; i < markers.length; i++) {
-          markers[i].setMap(null);
-        }
-        markers = [];
-      }
+       function TestMarker() {
+         Marker1 = new google.maps.LatLng(51.525305,-0.0326352); addMarker(Marker1);
+         Marker2 = new google.maps.LatLng(51.531911,-0.0347625); addMarker(Marker2);
+       }
 
 
        var circle = new google.maps.Circle({

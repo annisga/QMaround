@@ -39,11 +39,9 @@ h4{
 }
 
 .btn-group {
-  text-align: center;
+  align-content: center;
   margin-bottom: 50px;
   margin-top: 30px;
-  margin-left: 350px;
-  margin-right: 350px;
 }
 
 .btn-group button {

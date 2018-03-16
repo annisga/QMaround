@@ -12,10 +12,10 @@
   <div class="btn-group" role="group">
 
       <button id="foodmarker" class="btn btn-outline-info">Food</button>
-      <button type="button" class="btn btn-outline-info">Drinks</button>
-      <button type="button" class="btn btn-outline-info">Sport</button>
-      <button type="button" class="btn btn-outline-info">Health & Beauty</button>
-      <button type="button" class="btn btn-outline-info">To Do</button>
+      <button id="drinksmarker" type="button" class="btn btn-outline-info">Drinks</button>
+      <button id="sportmarker" type="button" class="btn btn-outline-info">Sport</button>
+      <button id="healthmarker" type="button" class="btn btn-outline-info">Health & Beauty</button>
+      <button id="domarkers" type="button" class="btn btn-outline-info">To Do</button>
       <a href="about.html" class="btn btn-outline-info" role='button' aria-pressed="true">About Us</a>
 
   </div>
@@ -65,14 +65,12 @@
               draggable: true,
               map: map
           });
-        
-      }
+        }
 
-      $('#foodmarker').on('click', function() {
-          addmarker(marker1);
-          addmarker(marker2);
-      })
-
+          $('#foodmarker').on('click', function() {
+              addmarker(marker1);
+              addmarker(marker2);
+          })
     }
     </script>
 

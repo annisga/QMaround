@@ -9,20 +9,19 @@
 
   <h1> QMaround </h1>
 
-<div class="btn-group" role="group">
+  <div class="btn-group" role="group">
 
-    <button id="drop" onclick="TestMarker()" type="button" class="btn btn-outline-info">Food</button>
-    <button type="button" class="btn btn-outline-info">Drinks</button>
-    <button type="button" class="btn btn-outline-info">Sport</button>
-    <button type="button" class="btn btn-outline-info">Health & Beauty</button>
-    <button type="button" class="btn btn-outline-info">To Do</button>
-    <a href="about.html" class="btn btn-outline-info" role='button' aria-pressed="true">About Us</a>
+      <button id="foodmarker" class="btn btn-outline-info">Food</button>
+      <button type="button" class="btn btn-outline-info">Drinks</button>
+      <button type="button" class="btn btn-outline-info">Sport</button>
+      <button type="button" class="btn btn-outline-info">Health & Beauty</button>
+      <button type="button" class="btn btn-outline-info">To Do</button>
+      <a href="about.html" class="btn btn-outline-info" role='button' aria-pressed="true">About Us</a>
 
-</div>
+  </div>
 
-   <div id="map"></div>
+<div id="map"></div>
    <script>
-
 
      function initMap() {
        var qmary = {lat: 51.5240671, lng: -0.0403745};
@@ -30,6 +29,7 @@
          zoom: 14.4,
          center: qmary
        });
+
        var marker = new google.maps.Marker({
          position: qmary,
          map: map
@@ -47,17 +47,31 @@
       });
 
       function addMarker (location) {
-        marker = new google.maps.Marker({
-          position: location,
-          map: map,
-       animation: google.maps.Animation.DROP
-        });
+          marker = new google.maps.Marker({
+              position: location,
+              map: map,
+              animation: google.maps.Animation.DROP
+          });
       }
 
-      function TestMarker() {
-        Marker1 = new google.maps.LatLng(51.525305,-0.0326352); addMarker(Marker1);
-        Marker2 = new google.maps.LatLng(51.531911,-0.0347625); addMarker(Marker2);
+      //Food
+      var marker1 = new google.maps.LatLng(51.525305, -0.0326352);
+      var marker2 = new google.maps.LatLng(51.531911, -0.0347625);
+
+      function addmarker(latilongi) {
+          var marker = new google.maps.Marker({
+              position: latilongi,
+              title: 'new marker',
+              draggable: true,
+              map: map
+          });
+        
       }
+
+      $('#foodmarker').on('click', function() {
+          addmarker(marker1);
+          addmarker(marker2);
+      })
 
     }
     </script>

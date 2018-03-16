@@ -1,3 +1,11 @@
+header{
+  text-align: center;
+  background: url('https://i.imgur.com/mSxGhjg.jpg');
+  background-size: 100%;
+  color: #49597c,
+}
+
+
 h1 {
   color: #49597c ;
   text-align: center;

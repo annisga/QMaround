@@ -39,13 +39,9 @@ h4{
 }
 
 .btn-group {
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-content: center;
-=======
-  text-align: center;
->>>>>>> 1f06bc990c0e40a3beaba9a223fc71ebd1230864
   margin-bottom: 50px;
   margin-top: 30px;
 }

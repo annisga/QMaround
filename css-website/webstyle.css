@@ -24,11 +24,10 @@ p2 {
 header {
   background-position: center center;
   text-align: center;
-  background: url('https://i.imgur.com/NRGXgFH.jpg');
+  background: url('https://i.imgur.com/NRGXgFH.jpg?3');
   background-size: cover;
   padding: 235px;
   color: #49597c;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 

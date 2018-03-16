@@ -33,7 +33,6 @@ h2 {
 h3 {
   color: #49597c ;
   text-align: center;
-  image-orientation: center;
   font-family: 'Londrina Shadow', cursive;
   font-family: 'Londrina Outline', cursive;
   font-family: 'Spicy Rice', cursive;
@@ -90,4 +89,10 @@ p1 {
 
 body {
   background-color: #dce9f2 ;
+}
+
+.col-xs-4{
+     align: center;
+     image-orientation: center;
+     text-align: center;
 }

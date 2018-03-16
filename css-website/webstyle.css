@@ -110,3 +110,7 @@ body {
      image-orientation: center;
      text-align: center;
 }
+
+.img-circle {
+    border-radius: 50%;
+}

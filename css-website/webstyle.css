@@ -90,6 +90,20 @@ h4{
   color: #49597c;
 }
 
+p4{
+  text-align: center;
+  color: #49597c;
+  font-size: 20px;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.contact{
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  display: flex;
+}
+
 p{
   font-size: 20px;
   margin-left: 20px;

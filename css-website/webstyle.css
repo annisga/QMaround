@@ -93,15 +93,15 @@ h4{
 p4{
   text-align: center;
   color: #49597c;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Gochi Hand', cursive;
+  margin-left: 200px;
 }
 
-.contact{
-  margin-left: 300px;
-  margin-right: 300px;
+#contact{
   text-align: center;
-  display: flex;
+  color: #49597c;
+  margin-right: 200px;
 }
 
 p{
@@ -198,4 +198,10 @@ p3 {
 .fa-linkedin{
   background: #007bb5;
   color: white;
+}
+
+iframe{
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
 }

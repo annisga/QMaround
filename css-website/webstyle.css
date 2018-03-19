@@ -11,9 +11,11 @@ h1 {
 
 p2 {
   color: #49597c;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   font-family: 'Gochi Hand', cursive;
+  margin-left: 200px;
+  margin-right: 200px;
 
 }
 

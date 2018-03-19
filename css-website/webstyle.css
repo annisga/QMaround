@@ -24,14 +24,15 @@ p2 {
 }
 
 header {
-  background-position: center center;
+  background-position: center;
   text-align: center;
-  background: url('https://i.imgur.com/NRGXgFH.jpg?3');
+  background: url('https://i.imgur.com/NRGXgFH.jpg?3') no-repeat top center fixed;
+  height: 1000px;
+  width: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 235px;
   color: #49597c;
-  margin-left: auto;
-  margin-right: auto;
 
 }
 

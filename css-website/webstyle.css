@@ -10,13 +10,11 @@ h1 {
 }
 
 p2 {
+  display: block;
+  text-align: center;
   color: #49597c;
   font-size: 30px;
-  text-align: center;
   font-family: 'Gochi Hand', cursive;
-  margin-left: 100px;
-  margin-right: 100px;
-
 }
 
 .intro {
@@ -106,6 +104,7 @@ h4{
 }
 
 p4{
+  display: block;
   text-align: center;
   color: #49597c;
   font-size: 25px;
@@ -113,13 +112,11 @@ p4{
 }
 
 #contact{
+  display: block;
   text-align: center;
   color: #49597c;
-  align: center;
-  display: flex;
-  justify-content: center;
-  margin-left: 500px;
-  margin-right: 500px;
+  margin-left: 600px;
+  margin-right: 600px;
 }
 
 p{
@@ -247,31 +244,28 @@ header.about {
 }
 
 .anna{
+  display: block;
   text-align: center;
   background-color: rgba(255,255,255,0.6);
   padding: 50px 50px 50px 50px;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 30px;
   height: 600px;
 }
 
 .tash{
+  display: block;
   text-align: center;
   background-color: rgba(255,255,255,0.6);
   padding: 50px 50px 50px 50px;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 30px;
   height: 600px;
 }
 
 .katy{
+  display: block;
   text-align: center;
   background-color: rgba(255,255,255,0.6);
   padding: 50px 50px 50px 50px;
-  margin-left: 50px;
-  margin-right: 50px;
   margin-top: 30px;
   height: 600px;
 }

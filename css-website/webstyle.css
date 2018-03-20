@@ -116,10 +116,11 @@ p4{
 #contact{
   text-align: center;
   color: #49597c;
-  margin-right: 200px;
   align: center;
-  justify: center;
-  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 500px;
+  margin-right: 500px;
 }
 
 p{

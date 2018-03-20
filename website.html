@@ -175,6 +175,18 @@
               addmarker(marker31);
           })
 
+          var content = "hi"
+
+          var infowindow = new google.maps.InfoWindow()
+
+          google.maps.event.addListener(marker,'click',
+          (function(marker,content,infowindow){
+            return function() {
+              infowindow.setContent(content);
+              infowindow.open(map,marker);
+            };
+          })(marker,content,infowindow));
+
     }
     </script>
 
@@ -189,6 +201,10 @@
    <br>
    <br>
    <p4>Is your favourite place not on the map yet? Reach out and tell us why you love it!</p4>
+<<<<<<< HEAD
+<br>
+=======
+>>>>>>> b0810603874bd8b98d60d2eb5f79fad1d13512d8
    <a id="contact" href="google.html" class="btn btn-outline-info" role='button' aria-pressed="true">Contact Us</a>
    <br>
 

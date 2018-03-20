@@ -215,6 +215,10 @@ p3 {
   color: white;
 }
 
+.google{
+  background-color:  rgb(239, 237, 231);
+}
+
 iframe{
   text-align: center;
   margin-left: 300px;

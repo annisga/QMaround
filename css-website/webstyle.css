@@ -110,7 +110,6 @@ p4{
   color: #49597c;
   font-size: 25px;
   font-family: 'Gochi Hand', cursive;
-  margin-left: 100px;
 }
 
 #contact{
@@ -148,6 +147,7 @@ p1 {
 
 body {
   background-color: #dce9f2 ;
+  width: 100%
 }
 
 .col-xs-4{

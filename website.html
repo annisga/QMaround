@@ -36,6 +36,7 @@
 
      function initMap() {
        var qmary = {lat: 51.5240671, lng: -0.0403745};
+      var infowindow = new google.maps.InfoWindow()
        var map = new google.maps.Map(document.getElementById('map'), {
          zoom: 14.4,
          center: qmary
@@ -115,6 +116,13 @@
               draggable: true,
               map: map
           });
+          google.maps.event.addListener(marker,'click',
+          (function(marker,content,infowindow){
+            return function() {
+              infowindow.setContent(content);
+              infowindow.open(map,marker);
+            };
+          })(marker,content,infowindow));
         gmarkers.push(marker);
       }
 
@@ -177,15 +185,6 @@
 
           var content = "hi"
 
-          var infowindow = new google.maps.InfoWindow()
-
-          google.maps.event.addListener(marker,'click',
-          (function(marker,content,infowindow){
-            return function() {
-              infowindow.setContent(content);
-              infowindow.open(map,marker);
-            };
-          })(marker,content,infowindow));
 
     }
     </script>

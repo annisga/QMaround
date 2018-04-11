@@ -13,8 +13,9 @@ p2 {
   display: block;
   text-align: center;
   color: #49597c;
-  font-size: 30px;
-  font-family: 'Gochi Hand', cursive;
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
 }
 
 .intro {
@@ -108,8 +109,9 @@ p4{
   display: block;
   text-align: center;
   color: #49597c;
-  font-size: 25px;
-  font-family: 'Gochi Hand', cursive;
+  font-size: 40px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
 }
 
 #contact{
@@ -131,10 +133,11 @@ p{
 }
 
 p1 {
-  font-size: 23px;
+  font-size: 26px;
   text-align: center;
   color: #49597c;
-  font-family: 'Gochi Hand', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
 }
 
 #map {

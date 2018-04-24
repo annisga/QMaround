@@ -57,17 +57,12 @@
             radius: 1209.34
       });
 
-      function addMarker(latilongi, label) {
-        var marker = new google.maps.Marker({
-          position: latilongi,
-          title: 'new marker',
-          map: map,
-          labelText: label,
-          labelClass: "labels",
-          labelStyle: {top: "0px", left:"-21px", opacity: 0.75},
-          labelVisible: true,
-          animation: google.maps.Animation.DROP
-        });
+      function addMarker (location) {
+          marker = new google.maps.Marker({
+              position: location,
+              map: map,
+              animation: google.maps.Animation.DROP
+          });
       }
 
       var gmarkers = [];
@@ -119,16 +114,17 @@
               title: 'new marker',
               map: map
           });
-          google.maps.event.addListener(marker,'click',
-          (function(marker,content,infowindow){
-            return function() {
-              infowindow.setContent(content);
-              infowindow.open(map,marker);
-            };
-          })(marker,content,infowindow));
-        gmarkers.push(marker);
-      }
+        }
 
+      var infowindow = new google.maps.infoWindow({
+        content: 'Hello!'
+      });
+      infowindow.open(map, marker);
+
+      google.maps.event.addListener(marker,'click', function() {
+        infowindow.open(map, marker);
+      });
+    
       function removeMarkers(){
         for(i=0; i<gmarkers.length; i++){
           gmarkers[i].setMap(null);

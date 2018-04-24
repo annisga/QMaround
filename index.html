@@ -115,6 +115,7 @@
               map: map
           });
         }
+
         google.maps.event.addListener(marker,'click',
             (function(marker,content,infowindow){
               return function() {
@@ -124,11 +125,11 @@
             })(marker,content,infowindow));
           gmarkers.push(marker);
         }
-        
+
       function removeMarkers(){
         for(i=0; i<gmarkers.length; i++){
           gmarkers[i].setMap(null);
-        }
+        };
       }
 
       $('#btnaddfoodmarker').on('click', function() {

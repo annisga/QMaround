@@ -114,9 +114,7 @@
               title: 'new marker',
               map: map
           });
-        }
-
-        google.maps.event.addListener(marker,'click',
+          google.maps.event.addListener(marker,'click',
             (function(marker,content,infowindow){
               return function() {
                 infowindow.setContent(content);
@@ -129,7 +127,7 @@
       function removeMarkers(){
         for(i=0; i<gmarkers.length; i++){
           gmarkers[i].setMap(null);
-        };
+        }
       }
 
       $('#btnaddfoodmarker').on('click', function() {
